@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Avatar, Typography, Stack } from '@mui/material';
+import { Box, Typography, Stack } from '@mui/material';
 
 import UserImage from '../../assets/user.png';
 
@@ -7,11 +7,18 @@ const User = () => {
   return (
     <Box>
       <Stack>
-        <Avatar
-          alt='User Avatar'
-          src={UserImage}
-          sx={{ width: '80px', height: '80px', margin: '0 auto' }}
-        />
+        <Box
+          sx={{
+            width: '80px',
+            height: '80px',
+            margin: '0 auto 14px',
+            backgroundColor: '#FBEBB8',
+            borderRadius: '50%',
+            overflow: 'hidden',
+          }}
+        >
+          <img alt='User Avatar' src={UserImage} />
+        </Box>
         <Typography
           component={'p'}
           variant={'p'}
