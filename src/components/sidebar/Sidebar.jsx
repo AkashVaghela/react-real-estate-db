@@ -7,8 +7,16 @@ import Footer from './Footer';
 
 const Sidebar = () => {
   return (
-    <Box sx={{padding: '40px 40px 0', height: '100vh'}}>
-      <Stack sx={{gap: '40px'}}>
+    <Box
+      sx={{
+        padding: '40px 40px 0',
+        height: '100vh',
+        position: 'fixed',
+        top: 0,
+        left: 0,
+      }}
+    >
+      <Stack sx={{ gap: '40px' }}>
         <User />
         <Navigation />
         <Footer />

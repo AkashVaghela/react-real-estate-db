@@ -11,17 +11,32 @@ import SalesByRegion from './SalesByRegion';
 
 const Home = () => {
   return (
-    <Box>
+    <Box sx={{ padding: '12px', margin: '8px' }}>
       <Header />
-      <Stack>
+      <Stack
+        direction='row'
+        alignItems='center'
+        gap='24px'
+        sx={{ marginBottom: '12px' }}
+      >
         <Banner />
         <Cards />
       </Stack>
-      <Stack>
+      <Stack
+        direction='row'
+        alignItems='center'
+        gap='24px'
+        sx={{ marginBottom: '12px' }}
+      >
         <SalesAnalysis />
         <IncomeStastics />
       </Stack>
-      <Stack>
+      <Stack
+        direction='row'
+        alignItems='center'
+        gap='24px'
+        sx={{ marginBottom: '12px' }}
+      >
         <SalesReport />
         <SalesByRegion />
       </Stack>
