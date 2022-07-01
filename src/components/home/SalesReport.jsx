@@ -97,17 +97,30 @@ const SalesReport = () => {
                       </Stack>
                     </TableCell>
                   </Box>
-                  <TableCell component={'p'} variant={'p'} sx={tableCell}>
+                  <TableCell component={'p'} sx={tableCell}>
                     {sale.propertyName}
                   </TableCell>
-                  <TableCell component={'p'} variant={'p'} sx={tableCell}>
+                  <TableCell component={'p'} sx={tableCell}>
                     {sale.salesType}
                   </TableCell>
-                  <TableCell component={'p'} variant={'p'} sx={tableCell}>
+                  <TableCell component={'p'} sx={tableCell}>
                     {sale.price}
                   </TableCell>
-                  <TableCell component={'p'} variant={'p'} sx={tableCell}>
-                    {sale.status}
+                  <TableCell>
+                    <button
+                      style={{
+                        border: 'none',
+                        fontSize: '12px',
+                        fontWeight: 500,
+                        lineHeight: '22px',
+                        borderRadius: '10px',
+                        padding: '6px 20px',
+                        color: '#0C0507',
+                        backgroundColor: '#A7E0DA',
+                      }}
+                    >
+                      {sale.status}
+                    </button>
                   </TableCell>
                 </TableRow>
               );

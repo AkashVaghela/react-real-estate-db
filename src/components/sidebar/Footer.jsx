@@ -1,4 +1,4 @@
-import { Box, ListItem, ListItemText } from '@mui/material';
+import { Box, ListItem, ListItemText, Typography } from '@mui/material';
 import SettingsLogo from '../../assets/icons/logout.png';
 
 const Footer = () => {
@@ -16,10 +16,12 @@ const Footer = () => {
             }}
           />
         </Box>
-        <ListItemText
+        <Typography
           primary='Logout'
           sx={{ fontSize: '14px', fontWeigt: 500, color: '#6F6F6F' }}
-        />
+        >
+          Logout
+        </Typography>
       </ListItem>
     </Box>
   );

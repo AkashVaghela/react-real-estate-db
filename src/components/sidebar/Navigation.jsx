@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, List, ListItem, ListItemText } from '@mui/material';
+import { Box, List, ListItem, ListItemText, Typography } from '@mui/material';
 
 import { navigation } from '../../assets/data';
 
@@ -12,7 +12,7 @@ const Navigation = () => {
             return (
               <ListItem
                 key={Math.random()}
-                sx={{ display: 'flex', gap: '12px' }}
+                sx={{ display: 'flex', gap: '8px' }}
               >
                 <Box sx={{ width: 32, height: 32 }}>
                   <img
@@ -25,10 +25,12 @@ const Navigation = () => {
                     }}
                   />
                 </Box>
-                <ListItemText
+                <Typography
                   primary={item.title}
-                  sx={{ fontSize: '14px', fontWeigt: 500, color: '#6F6F6F' }}
-                />
+                  sx={{ fontSize: '14px', fontWeight: 500, color: '#6F6F6F' }}
+                >
+                  {item.title}
+                </Typography>
               </ListItem>
             );
           })}
@@ -37,5 +39,4 @@ const Navigation = () => {
     </Box>
   );
 };
-
 export default Navigation;

@@ -23,7 +23,7 @@ const User = () => {
           component={'p'}
           variant={'p'}
           align='center'
-          sx={{ fontSize: '12px', fontWeigt: 400, lineHeight: '16px' }}
+          sx={{ fontSize: '12px', fontWeight: 400, lineHeight: '16px' }}
         >
           Welcome Back
         </Typography>
@@ -31,7 +31,7 @@ const User = () => {
           component={'h4'}
           variant={'h4'}
           align='center'
-          sx={{ fontSize: '18px', fontWeigt: 700, lineHeight: '28px' }}
+          sx={{ fontSize: '18px', fontWeight: 700, lineHeight: '28px' }}
         >
           Peter Parker
         </Typography>

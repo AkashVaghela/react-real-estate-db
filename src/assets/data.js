@@ -53,6 +53,13 @@ export const cards = [
   },
 ];
 
+export const sales = [
+  { key: 1, title: 'Online Sale', amount: '$3,425' },
+  { key: 2, title: 'Offline Sale', amount: '$3,120' },
+  { key: 3, title: 'Agent Sale', amount: '$2,472' },
+  { key: 4, title: 'Marketing Sale', amount: '$5,120' },
+];
+
 export const salesReport = [
   {
     avatar: require('../assets/avatar-1.png'),
