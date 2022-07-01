@@ -34,6 +34,12 @@ const SalesAnalysis = () => {
               color: '#000',
               borderRadius: '10px',
               padding: '8px 16px',
+              letterSpacing: '1px',
+              transition: 'all .25s ease-in-out',
+              '&:hover': {
+                color: '#0C0507',
+                backgroundColor: '#A7E0DA',
+              },
             }}
           >
             Jan, 2022

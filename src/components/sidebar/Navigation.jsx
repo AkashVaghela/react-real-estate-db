@@ -24,7 +24,6 @@ const Navigation = () => {
                   sx={{
                     width: 32,
                     height: 32,
-                    // backgroundColor: 'red',
                   }}
                 >
                   <img
@@ -35,9 +34,6 @@ const Navigation = () => {
                       height: '24px',
                       width: '24px',
                       margin: '4px auto 0',
-                      '&:hover': {
-                        // backgroundColor: 'green',
-                      },
                     }}
                   />
                 </Box>

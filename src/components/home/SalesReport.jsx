@@ -9,6 +9,7 @@ import {
   TableHead,
   TableRow,
   Stack,
+  Button,
 } from '@mui/material';
 
 import { salesReport } from '../../assets/data';
@@ -107,20 +108,27 @@ const SalesReport = () => {
                     {sale.price}
                   </TableCell>
                   <TableCell>
-                    <button
-                      style={{
+                    <Button
+                      sx={{
                         border: 'none',
                         fontSize: '12px',
                         fontWeight: 500,
                         lineHeight: '22px',
                         borderRadius: '10px',
                         padding: '6px 20px',
-                        color: '#0C0507',
-                        backgroundColor: '#A7E0DA',
+                        color: '#FFF',
+                        backgroundColor: '#0C0507',
+                        transition: 'all .25s ease-in-out',
+                        '&:hover': {
+                          color: '#000',
+                          cursor: 'pointer',
+                          fontWeight: 600,
+                          backgroundColor: '#A7E0DA',
+                        },
                       }}
                     >
                       {sale.status}
-                    </button>
+                    </Button>
                   </TableCell>
                 </TableRow>
               );

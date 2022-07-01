@@ -16,16 +16,31 @@ const Header = () => {
           Dashboard
         </Typography>
         <Stack direction='row'>
-          <Box sx={{ width: '48px', height: '48px' }}>
+          <Box
+            sx={{
+              width: '48px',
+              height: '48px',
+              '&:hover': { cursor: 'pointer' },
+            }}
+          >
             <img
               sx={{ width: '24px', height: '24px' }}
               src={searchIcon}
               alt='searchIcon'
             />
           </Box>
-          <Box sx={{ width: '48px', height: '48px' }}>
+          <Box
+            sx={{
+              width: '48px',
+              height: '48px',
+              '&:hover': { cursor: 'pointer' },
+            }}
+          >
             <img
-              sx={{ width: '24px', height: '24px' }}
+              sx={{
+                width: '24px',
+                height: '24px',
+              }}
               src={notificationIcon}
               alt='notificationIcon'
             />

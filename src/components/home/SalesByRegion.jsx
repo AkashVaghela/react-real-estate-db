@@ -26,8 +26,22 @@ const SalesByRegion = () => {
       >
         Sales by Region
       </Typography>
-      <Box>
-        <img src={map} alt='map' />
+      <Box
+        sx={{
+          width: '254px',
+          height: '254px',
+          overflow: 'hidden',
+          '&:hover img': { transform: 'scale(1.05)' },
+        }}
+      >
+        <img
+          src={map}
+          alt='map'
+          style={{
+            width: '100%',
+            transition: '0.5s all ease-in-out',
+          }}
+        />
       </Box>
     </Box>
   );
