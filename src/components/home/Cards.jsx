@@ -18,6 +18,11 @@ const Cards = () => {
                 borderRadius: '16px',
                 padding: '24px',
                 justifyContent: 'space-around',
+                '&:hover': {
+                  cursor: 'pointer',
+                  paddingRight: '64px',
+                  transition: 'padding .25s ease-in-out',
+                },
               }}
             >
               <Box>

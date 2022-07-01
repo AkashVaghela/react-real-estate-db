@@ -34,6 +34,10 @@ const Banner = () => {
               fontWeigt: 500,
               borderRadius: '10px',
               backgroundColor: '#0C0507',
+              '&:hover': {
+                color: '#0C0507',
+                backgroundColor: '#A7E0DA',
+              },
             }}
           >
             Explore Now

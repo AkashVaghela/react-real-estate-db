@@ -12,22 +12,47 @@ const Navigation = () => {
             return (
               <ListItem
                 key={Math.random()}
-                sx={{ display: 'flex', gap: '8px' }}
+                sx={{
+                  display: 'flex',
+                  gap: '8px',
+                  '&:hover': {
+                    cursor: 'pointer',
+                  },
+                }}
               >
-                <Box sx={{ width: 32, height: 32 }}>
+                <Box
+                  sx={{
+                    width: 32,
+                    height: 32,
+                    // backgroundColor: 'red',
+                  }}
+                >
                   <img
-                    src={item.icon}
                     alt={item.icon}
-                    sx={{
-                      height: '100%',
-                      width: '100%',
-                      backgroundColor: 'transparent',
+                    src={item.icon}
+                    style={{
+                      display: 'block',
+                      height: '24px',
+                      width: '24px',
+                      margin: '4px auto 0',
+                      '&:hover': {
+                        // backgroundColor: 'green',
+                      },
                     }}
                   />
                 </Box>
                 <Typography
                   primary={item.title}
-                  sx={{ fontSize: '14px', fontWeight: 500, color: '#6F6F6F' }}
+                  sx={{
+                    fontWeight: 500,
+                    fontSize: '14px',
+                    color: '#6F6F6F',
+                    '&:hover': {
+                      color: '#0C0507',
+                      fontWeight: 600,
+                      transition: 'color .25s ease-in-out',
+                    },
+                  }}
                 >
                   {item.title}
                 </Typography>
